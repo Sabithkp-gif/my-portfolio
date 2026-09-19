@@ -147,10 +147,38 @@
             </div>
           </div>
 
-          <!-- Right: Visual Workspace Composition with Mouse Parallax -->
+          <!-- Right: 3D Multi-Layer Parallax Workspace Visual Stage -->
           <div class="hero-visual-col reveal-fade-up">
-            <div class="hero-composition-stage">
-              <img src="/assets/images/hero-composition.svg" alt="Sabith Developer Workspace &amp; System Architecture Abstract Composition" class="hero-comp-image" />
+            <div class="hero-composition-stage" id="hero-parallax-stage">
+              <!-- Layer 0: Ambient Background Gradient Halo -->
+              <div class="parallax-layer layer-ambient-glow" data-depth="0.15"></div>
+
+              <!-- Layer 1: Main Architecture Code & Sparkline Canvas -->
+              <div class="parallax-layer layer-base-canvas" data-depth="0.35">
+                <img src="/assets/images/hero-composition.svg" alt="Sabith Developer Workspace &amp; System Architecture Abstract Composition" class="hero-comp-image" />
+              </div>
+
+              <!-- Layer 2: Floating Card Top-Left (Latency & Feel) -->
+              <div class="parallax-layer layer-floating-card layer-card-top-left" data-depth="0.85">
+                <div class="floating-badge-inner">
+                  <div class="badge-dot-live"></div>
+                  <div>
+                    <div class="badge-title">LATENCY &amp; FEEL</div>
+                    <div class="badge-sub">&lt; 45ms • 120 FPS Native</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Layer 3: Floating Card Bottom-Right (Active Toolchain) -->
+              <div class="parallax-layer layer-floating-card layer-card-bottom-right" data-depth="1.3">
+                <div class="floating-badge-inner">
+                  <span class="badge-icon">⚡</span>
+                  <div>
+                    <div class="badge-title">CORE STACK</div>
+                    <div class="badge-sub">Flutter • FastAPI • ESP8266</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -355,20 +383,20 @@
 
             <!-- Email Clipboard Action -->
             <div style="margin-top: 0.5rem;">
-              <button id="copy-email-btn" class="btn-pill btn-primary btn-magnetic" data-email="sabith.developer@gmail.com">
-                📋 Copy sabith.developer@gmail.com
+              <button id="copy-email-btn" class="btn-pill btn-primary btn-magnetic" data-email="kpsabith978@gmail.com">
+                📋 Copy kpsabith978@gmail.com
               </button>
             </div>
 
             <!-- Social Links Minimal -->
             <div class="social-links-pills" style="margin-top: 1rem;">
-              <a href="https://github.com/sabith" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Sabith on GitHub">
+              <a href="https://github.com/Sabithkp-gif" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Sabith on GitHub">
                 GitHub ↗
               </a>
-              <a href="https://linkedin.com/in/sabith" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Sabith on LinkedIn">
+              <a href="https://www.linkedin.com/in/free-fire-kp-33a622411" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Sabith on LinkedIn">
                 LinkedIn ↗
               </a>
-              <a href="https://instagram.com/sabith" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Sabith on Instagram">
+              <a href="https://www.instagram.com/sabith_labs?utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Sabith on Instagram">
                 Instagram ↗
               </a>
             </div>

@@ -40,7 +40,7 @@ export const initContact = () => {
 
   if (copyBtn) {
     copyBtn.addEventListener('click', async () => {
-      const email = copyBtn.dataset.email || 'sabith.developer@gmail.com';
+      const email = copyBtn.dataset.email || 'kpsabith978@gmail.com';
       try {
         await navigator.clipboard.writeText(email);
         showToast(`✓ Copied ${email} to clipboard`);

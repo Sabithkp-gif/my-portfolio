@@ -1,6 +1,6 @@
 /**
- * GSAP & SCROLLTRIGGER ANIMATION SYSTEM
- * Hero Parallax • Horizontal Gallery Pinned Scroll • Magnetic Buttons • Scroll Reveals
+ * GSAP & SCROLLTRIGGER ANIMATION & PARALLAX SYSTEM
+ * 3D Multi-Layer Hero Parallax • Scroll-Driven Card Image Parallax • Horizontal Gallery • Magnetic Physics
  */
 
 export const initAnimations = () => {
@@ -24,25 +24,132 @@ export const initAnimations = () => {
     gsap.registerPlugin(ScrollTrigger);
   }
 
-  // 1. Hero Mouse Parallax (Desktop Only)
-  const heroVisual = document.querySelector('.hero-composition-stage');
-  if (heroVisual && window.innerWidth > 1024) {
-    const xTo = gsap.quickTo(heroVisual, 'x', { duration: 0.8, ease: 'power2.out' });
-    const yTo = gsap.quickTo(heroVisual, 'y', { duration: 0.8, ease: 'power2.out' });
-    const rotTo = gsap.quickTo(heroVisual, 'rotationY', { duration: 0.8, ease: 'power2.out' });
+  // 1. Interactive 3D Multi-Layer Mouse Parallax on Hero
+  const stage = document.querySelector('#hero-parallax-stage');
+  const layers = document.querySelectorAll('#hero-parallax-stage .parallax-layer');
+
+  if (stage && window.innerWidth > 1024) {
+    const rotXTo = gsap.quickTo(stage, 'rotationX', { duration: 0.7, ease: 'power2.out' });
+    const rotYTo = gsap.quickTo(stage, 'rotationY', { duration: 0.7, ease: 'power2.out' });
+    const stageXTo = gsap.quickTo(stage, 'x', { duration: 0.8, ease: 'power2.out' });
+    const stageYTo = gsap.quickTo(stage, 'y', { duration: 0.8, ease: 'power2.out' });
+
+    // Individual layer quickTo setters
+    const layerSetters = Array.from(layers).map((layer) => ({
+      el: layer,
+      depth: parseFloat(layer.dataset.depth || '0.5'),
+      xTo: gsap.quickTo(layer, 'x', { duration: 0.6, ease: 'power2.out' }),
+      yTo: gsap.quickTo(layer, 'y', { duration: 0.6, ease: 'power2.out' })
+    }));
 
     window.addEventListener('mousemove', (e) => {
       const { innerWidth, innerHeight } = window;
       const xNorm = (e.clientX / innerWidth - 0.5) * 2; // -1 to 1
       const yNorm = (e.clientY / innerHeight - 0.5) * 2;
 
-      xTo(xNorm * 22);
-      yTo(yNorm * 18);
-      rotTo(xNorm * 6);
+      // 3D stage tilt
+      rotYTo(xNorm * 12);
+      rotXTo(-yNorm * 10);
+      stageXTo(xNorm * 15);
+      stageYTo(yNorm * 12);
+
+      // Layer displacement by depth
+      layerSetters.forEach(({ depth, xTo, yTo }) => {
+        xTo(xNorm * depth * 28);
+        yTo(yNorm * depth * 24);
+      });
+    });
+
+    // Reset smoothly when leaving window
+    document.addEventListener('mouseleave', () => {
+      rotXTo(0);
+      rotYTo(0);
+      stageXTo(0);
+      stageYTo(0);
+      layerSetters.forEach(({ xTo, yTo }) => {
+        xTo(0);
+        yTo(0);
+      });
     });
   }
 
-  // 2. Horizontal Featured Work Gallery (Desktop Only)
+  // 2. Scroll-Driven Parallax on Hero Section
+  if (ScrollTrigger) {
+    const heroSection = document.querySelector('.hero-section');
+    const heroTitle = document.querySelector('.hero-giant-title');
+    const heroVisual = document.querySelector('#hero-parallax-stage');
+
+    if (heroSection && heroTitle) {
+      gsap.to(heroTitle, {
+        yPercent: -22,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: heroSection,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true
+        }
+      });
+    }
+
+    if (heroSection && heroVisual) {
+      gsap.to(heroVisual, {
+        yPercent: 18,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: heroSection,
+          start: 'top top',
+          end: 'bottom top',
+          scrub: true
+        }
+      });
+    }
+
+    // Scroll parallax on project card images (cinematic depth feel)
+    const initCardImageParallax = () => {
+      const cards = document.querySelectorAll('.horizontal-project-card, .project-grid-card');
+      cards.forEach((card) => {
+        const img = card.querySelector('.card-media-box img');
+        if (img) {
+          gsap.fromTo(
+            img,
+            { yPercent: -8, scale: 1.06 },
+            {
+              yPercent: 8,
+              scale: 1.0,
+              ease: 'none',
+              scrollTrigger: {
+                trigger: card,
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: 0.5
+              }
+            }
+          );
+        }
+      });
+    };
+
+    // Run after project cards are injected
+    setTimeout(initCardImageParallax, 400);
+
+    // Editorial quote scroll parallax
+    const quote = document.querySelector('.editorial-big-quote');
+    if (quote) {
+      gsap.to(quote, {
+        yPercent: -12,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: quote,
+          start: 'top 90%',
+          end: 'bottom 10%',
+          scrub: true
+        }
+      });
+    }
+  }
+
+  // 3. Horizontal Featured Work Gallery (Desktop Only)
   const setupHorizontalScroll = () => {
     const section = document.querySelector('.horizontal-section-pin');
     const track = document.querySelector('.horizontal-track-container');
@@ -52,7 +159,7 @@ export const initAnimations = () => {
     if (window.innerWidth > 768) {
       const getScrollAmount = () => -(track.scrollWidth - window.innerWidth + 160);
 
-      const tween = gsap.to(track, {
+      gsap.to(track, {
         x: getScrollAmount,
         ease: 'none',
         scrollTrigger: {
@@ -69,7 +176,7 @@ export const initAnimations = () => {
 
   setupHorizontalScroll();
 
-  // 3. Magnetic Buttons Interaction
+  // 4. Magnetic Buttons Interaction
   const setupMagneticButtons = () => {
     if (window.innerWidth <= 1024) return;
 
@@ -96,7 +203,7 @@ export const initAnimations = () => {
 
   setupMagneticButtons();
 
-  // 4. Staggered Section Reveals with ScrollTrigger
+  // 5. Staggered Section Reveals with ScrollTrigger
   if (ScrollTrigger) {
     const revealElements = document.querySelectorAll('.reveal-fade-up');
     revealElements.forEach((el) => {
