@@ -1,0 +1,26 @@
+{
+  "name": "sabith-portfolio",
+  "version": "1.0.0",
+  "description": "Production-quality personal creative developer portfolio for Sabith",
+  "main": "server/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "developer",
+    "creative-technologist",
+    "flutter",
+    "web",
+    "gsap",
+    "lenis"
+  ],
+  "author": "Sabith",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}

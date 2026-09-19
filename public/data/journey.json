@@ -1,0 +1,23 @@
+[
+  {
+    "year": "2026",
+    "phase": "Creative Technologist & Full-Stack Systems",
+    "title": "Unified Product Ecosystems & Embedded AI",
+    "description": "Architecting multi-platform experiences combining Flutter mobile apps, local LLM RAG pipelines, and custom IoT edge telemetry nodes.",
+    "badges": ["Flutter", "FastAPI", "Ollama", "ESP8266", "Vanilla Web"]
+  },
+  {
+    "year": "2025",
+    "phase": "Mobile Architecture & Systems Engineering",
+    "title": "Deepening Cross-Platform & Backend Robustness",
+    "description": "Engineered real-time communication systems, WebSocket event dispatchers, and offline-first database synchronization models.",
+    "badges": ["Dart", "WebSockets", "SQLite", "Node.js", "Linux"]
+  },
+  {
+    "year": "2024",
+    "phase": "Foundations & Hardware Exploration",
+    "title": "Software Core & Microcontroller Interfacing",
+    "description": "Explored foundational software paradigms, Python backend development, network security fundamentals, and breadboard sensor integration.",
+    "badges": ["Python", "JavaScript", "C++", "Cybersecurity", "Networking"]
+  }
+]

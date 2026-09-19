@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selected Works &amp; Projects — Sabith</title>
+  
+  <meta name="description" content="Explore selected engineering projects and case studies by Sabith spanning mobile Flutter development, web architectures, AI workflows, and IoT edge hardware." />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Minimalist Preloader -->
+  <aside class="preloader-overlay" aria-hidden="true">
+    <div class="preloader-top">
+      <span class="preloader-brand">SABITH // PROJECTS DIRECTORY</span>
+      <span class="preloader-status">FETCHING CATALOG</span>
+    </div>
+    <div class="preloader-center">
+      <div class="preloader-counter">00</div>
+    </div>
+    <div class="preloader-bottom">
+      <div class="preloader-bar-track">
+        <div class="preloader-bar-fill"></div>
+      </div>
+      <span class="preloader-meta">INDEXING WORKS</span>
+    </div>
+  </aside>
+
+  <!-- Sticky Header Island -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-island" aria-label="Main Navigation">
+        <a href="/index.html" class="brand-link" aria-label="Sabith Homepage">
+          <span class="brand-monogram">S</span>
+          <span>SABITH</span>
+        </a>
+
+        <ul class="nav-links-center" role="list">
+          <li><a href="/index.html#featured-works" class="nav-item-link">Work</a></li>
+          <li><a href="/projects.html" class="nav-item-link is-active">Projects</a></li>
+          <li><a href="/about.html" class="nav-item-link">About</a></li>
+          <li><a href="/index.html#skills-section" class="nav-item-link">Skills</a></li>
+        </ul>
+
+        <div class="nav-action-right">
+          <a href="/contact.html" class="btn-pill btn-primary btn-magnetic">
+            Get in Touch <span class="arrow-shift-hover">→</span>
+          </a>
+          <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Drawer -->
+  <div class="mobile-drawer" role="dialog" aria-label="Mobile Navigation">
+    <nav class="mobile-drawer-links">
+      <a href="/index.html" class="mobile-nav-link">Home</a>
+      <a href="/projects.html" class="mobile-nav-link is-active">Selected Work</a>
+      <a href="/about.html" class="mobile-nav-link">About Sabith</a>
+      <a href="/index.html#skills-section" class="mobile-nav-link">Capabilities</a>
+      <a href="/contact.html" class="mobile-nav-link" style="color: var(--accent);">Contact</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <span class="eyebrow-label" style="color: var(--text-light-muted);">SABITH • CREATIVE TECHNOLOGIST</span>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section class="section-padding" style="padding-top: calc(var(--header-height) + 4rem);">
+      <div class="container">
+        
+        <!-- Header & Filter Bar -->
+        <div class="section-header-block reveal-fade-up">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+            <a href="/index.html" class="view-case-link" style="color: var(--text-secondary); font-size: 0.85rem;">← Home</a>
+            <span style="color: var(--border-strong);">/</span>
+            <span class="eyebrow-label">CATALOG</span>
+          </div>
+          <h1 class="hero-giant-title" style="font-size: clamp(3rem, 8vw, 7rem); margin-bottom: 0.5rem;">
+            SELECTED WORKS
+          </h1>
+          <p class="section-subhead">
+            A comprehensive index of mobile applications, backend services, IoT prototypes, and AI systems engineered by Sabith.
+          </p>
+        </div>
+
+        <!-- Filter & Search Controls Bar -->
+        <div class="flex-between" style="flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 1.5rem;">
+          <!-- Category Filter Buttons (Rendered dynamically) -->
+          <div class="filter-tabs-wrapper" id="filter-tabs" style="margin-bottom: 0;">
+            <!-- Rendered by projects.js -->
+          </div>
+
+          <!-- Instant Search -->
+          <div style="position: relative; min-width: 260px;">
+            <input 
+              type="search" 
+              id="project-search" 
+              class="form-input" 
+              placeholder="Search by name, tech (e.g. Flutter)..." 
+              style="padding: 0.5rem 1rem; font-size: 0.875rem; border-radius: var(--radius-full);"
+              aria-label="Search projects"
+            />
+          </div>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-catalog-grid" id="projects-grid">
+          <!-- Populated via projects.js from projects.json -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-huge">SABITH</div>
+          <p style="color: var(--text-light-muted); max-width: 480px; margin-top: 1rem;">
+            Developer and creative technologist crafting purposeful mobile products, web architectures, and hardware experiments.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; justify-content: flex-end;">
+          <span class="eyebrow-label" style="color: var(--text-light-muted);">NAVIGATION DIRECTORY</span>
+          <a href="/index.html" style="color: var(--text-light);">Home</a>
+          <a href="/projects.html" style="color: var(--text-light);">Selected Works</a>
+          <a href="/about.html" style="color: var(--text-light);">About &amp; Philosophy</a>
+          <a href="/contact.html" style="color: var(--text-light);">Direct Transmission</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 Sabith. All rights reserved.</span>
+        <a href="#main-content" class="back-to-top-btn">
+          Back to Top ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

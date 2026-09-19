@@ -1,0 +1,243 @@
+[
+  {
+    "id": "michat",
+    "title": "MiChat",
+    "tagline": "Real-time cross-platform mobile communication platform.",
+    "description": "A modern, high-performance messaging client engineered with Flutter and Dart. Features end-to-end encrypted messaging, real-time WebSocket state management, offline-first SQLite synchronization, and media caching.",
+    "category": "Mobile",
+    "year": 2026,
+    "featured": true,
+    "image": "/assets/projects/michat.svg",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "WebSockets",
+      "Node.js",
+      "SQLite",
+      "Riverpod"
+    ],
+    "links": {
+      "live": "https://github.com/sabith",
+      "github": "https://github.com/sabith/michat"
+    },
+    "caseStudy": {
+      "role": "Lead Mobile & Backend Engineer",
+      "duration": "4 Months (2026)",
+      "overview": "MiChat was conceived to bridge the gap between heavy, privacy-compromising chat apps and lightweight, ultra-responsive messaging clients. Built natively for Android and iOS using Flutter, the app delivers sub-50ms message propagation while keeping device resource consumption minimal.",
+      "challenge": "Maintaining instant state synchronization across unstable network conditions without message drops, while ensuring local database queries never block the UI rendering pipeline at 60/120fps.",
+      "solution": "Architected an offline-first event bus using Riverpod and SQLite with background isolate parsing. Implemented automated retry exponential backoff for WebSockets and custom payload compression.",
+      "features": [
+        "Instant bidirectional WebSocket messaging with automatic reconnection",
+        "Local SQLite cache with optimistic UI updates and conflict resolution",
+        "Media compression pipeline with progressive image preview loading",
+        "Biometric authentication lock & encrypted local data storage",
+        "Clean, distraction-free UI with fluid gesture transitions"
+      ],
+      "metrics": [
+        { "label": "Latency", "value": "< 45ms" },
+        { "label": "Frame Rate", "value": "120 FPS" },
+        { "label": "Offline Sync", "value": "100% Reliable" }
+      ]
+    }
+  },
+  {
+    "id": "pulse-iot",
+    "title": "PulseOS IoT",
+    "tagline": "Edge telemetry node & ambient environmental monitoring system.",
+    "description": "Low-power embedded sensor network constructed with ESP8266 and C++. Streams live telemetry over MQTT into a custom asynchronous FastAPI backend with an onboard 128x64 I2C OLED display.",
+    "category": "IoT",
+    "year": 2026,
+    "featured": true,
+    "image": "/assets/projects/pulse-iot.svg",
+    "technologies": [
+      "ESP8266",
+      "C++ / Arduino",
+      "MQTT",
+      "FastAPI",
+      "OLED I2C",
+      "Python"
+    ],
+    "links": {
+      "live": "https://github.com/sabith",
+      "github": "https://github.com/sabith/pulse-iot"
+    },
+    "caseStudy": {
+      "role": "Embedded Systems & Backend Developer",
+      "duration": "3 Months (2026)",
+      "overview": "PulseOS is a custom-engineered IoT edge device and telemetry platform designed for continuous environmental monitoring. The hardware unit samples air quality, temperature, and ambient light, processing data on-chip before publishing lightweight MQTT payloads.",
+      "challenge": "Operating reliably on intermittent micro-power supplies while handling network dropouts without memory fragmentation on resource-constrained microcontrollers (ESP8266 80KB RAM).",
+      "solution": "Engineered non-blocking C++ state machines with deep sleep modes, circular buffer telemetry queues in flash memory, and an asynchronous Python FastAPI ingestion worker.",
+      "features": [
+        "Hardware-level I2C display rendering custom pixel art metrics",
+        "MQTT broker communication with QoS 1 packet guarantees",
+        "Real-time WebSocket telemetry live graph for web clients",
+        "Configurable threshold alerts with instant webhook triggers",
+        "Over-The-Air (OTA) firmware update protocol"
+      ],
+      "metrics": [
+        { "label": "Power Draw", "value": "15mA Avg" },
+        { "label": "Uptime", "value": "99.98%" },
+        { "label": "Sample Rate", "value": "1000ms" }
+      ]
+    }
+  },
+  {
+    "id": "lumina-studio",
+    "title": "Lumina Engine",
+    "tagline": "Editorial web design system & headless showcase architecture.",
+    "description": "A bespoke creative technology framework prioritizing typography hierarchy, smooth momentum scrolling with Lenis, GSAP timeline choreography, and zero-dependency canvas micro-interactions.",
+    "category": "Web",
+    "year": 2026,
+    "featured": true,
+    "image": "/assets/projects/lumina-studio.svg",
+    "technologies": [
+      "JavaScript (ES6+)",
+      "GSAP",
+      "Lenis",
+      "CSS Custom Properties",
+      "Node.js"
+    ],
+    "links": {
+      "live": "https://github.com/sabith",
+      "github": "https://github.com/sabith/lumina-engine"
+    },
+    "caseStudy": {
+      "role": "Frontend Architect & Designer",
+      "duration": "2 Months (2026)",
+      "overview": "Lumina was created as an antidote to heavy, generic template websites. It proves that pure vanilla JavaScript and clean CSS architecture can outperform heavy modern frontend frameworks in both runtime smoothness and visual elegance.",
+      "challenge": "Achieving complex multi-layer parallax, pinned horizontal galleries, and custom magnetic cursor physics without causing layout thrashing or dropped frames on mobile viewports.",
+      "solution": "Utilized GPU-composited CSS transforms (translate3d), requestAnimationFrame throttling, dynamic intersection observers, and synchronized Lenis momentum scroll pipelines.",
+      "features": [
+        "Zero-layout-shift responsive typography fluid clamping",
+        "Physics-based magnetic button interaction system",
+        "Scroll-driven horizontal showcase pinning with scrubbed progress",
+        "Graceful fallback for prefers-reduced-motion settings",
+        "Modular decoupled data-to-DOM rendering pipeline"
+      ],
+      "metrics": [
+        { "label": "Lighthouse Score", "value": "99/100" },
+        { "label": "Bundle Size", "value": "< 45 KB" },
+        { "label": "Animation Speed", "value": "60 FPS" }
+      ]
+    }
+  },
+  {
+    "id": "cerebro-ai",
+    "title": "Cerebro AI",
+    "tagline": "Local LLM orchestration & contextual developer workflow assistant.",
+    "description": "Privacy-centric AI desktop workflow assistant integrating local Ollama models with vector embeddings, semantic AST code search, and automated contextual documentation synthesis.",
+    "category": "AI",
+    "year": 2026,
+    "featured": true,
+    "image": "/assets/projects/cerebro-ai.svg",
+    "technologies": [
+      "Python",
+      "FastAPI",
+      "Ollama",
+      "ChromaDB",
+      "LangChain",
+      "Vanilla JS"
+    ],
+    "links": {
+      "live": "https://github.com/sabith",
+      "github": "https://github.com/sabith/cerebro-ai"
+    },
+    "caseStudy": {
+      "role": "Full-Stack AI Engineer",
+      "duration": "3 Months (2026)",
+      "overview": "Cerebro AI enables developers to execute complex semantic codebase queries and documentation summarization entirely locally, ensuring sensitive source code never leaves the developer's workstation.",
+      "challenge": "Optimizing vector retrieval latency across large local repositories and streaming LLM token chunks smoothly to a web client interface without UI stutter.",
+      "solution": "Built an asynchronous Python FastAPI server utilizing ChromaDB for dense vector indexing and server-sent events (SSE) for streaming inference token by token.",
+      "features": [
+        "100% offline local inference via quantized Ollama LLM models",
+        "Automated codebase indexing with tree-sitter AST syntax chunking",
+        "Server-Sent Events (SSE) token streaming interface",
+        "Markdown & syntax highlighted code snippet rendering",
+        "Configurable temperature and system prompt workspace profiles"
+      ],
+      "metrics": [
+        { "label": "Privacy", "value": "100% Local" },
+        { "label": "Retrieval Latency", "value": "< 120ms" },
+        { "label": "Token Stream", "value": "45 t/s" }
+      ]
+    }
+  },
+  {
+    "id": "sentinel-guard",
+    "title": "Sentinel Guard",
+    "tagline": "Lightweight network security auditing & socket analyzer.",
+    "description": "Autonomous network diagnostic tool constructed in Python and Linux raw sockets for packet inspection, unauthorized service detection, and cryptographic cipher auditing.",
+    "category": "Security",
+    "year": 2025,
+    "featured": false,
+    "image": "/assets/projects/sentinel-guard.svg",
+    "technologies": [
+      "Python",
+      "Linux Sockets",
+      "Scapy",
+      "Bash",
+      "Docker"
+    ],
+    "links": {
+      "live": "https://github.com/sabith",
+      "github": "https://github.com/sabith/sentinel-guard"
+    },
+    "caseStudy": {
+      "role": "Security & Systems Engineer",
+      "duration": "2 Months (2025)",
+      "overview": "Built as a modular command-line and web-connected security diagnostic tool to evaluate local subnet safety, active port postures, and SSL/TLS configuration compliance.",
+      "challenge": "Performing rapid asynchronous socket probing without triggering false positive network alarms or exhausting file descriptors.",
+      "solution": "Implemented asynchronous asyncio socket connection pools with token-bucket rate limiting and raw TCP header validation.",
+      "features": [
+        "Fast asynchronous TCP/UDP port scanner with banner grabbing",
+        "TLS/SSL cipher suite analyzer and certificate expiration check",
+        "ARP spoofing detection and network gateway integrity verification",
+        "Structured JSON reporting output for CI/CD integration"
+      ],
+      "metrics": [
+        { "label": "Scan Speed", "value": "1000 ports/s" },
+        { "label": "False Positive", "value": "< 0.1%" },
+        { "label": "Memory Footprint", "value": "< 18 MB" }
+      ]
+    }
+  },
+  {
+    "id": "aura-habit",
+    "title": "Aura Minimalist",
+    "tagline": "Biometric habit tracker & cognitive daily journaling companion.",
+    "description": "A refined Flutter utility application emphasizing spatial design, local SQLite storage, tactile haptic feedback, and zero-analytics user respect.",
+    "category": "Mobile",
+    "year": 2025,
+    "featured": false,
+    "image": "/assets/projects/aura-habit.svg",
+    "technologies": [
+      "Flutter",
+      "Dart",
+      "SQLite",
+      "Custom Painters",
+      "Haptics"
+    ],
+    "links": {
+      "live": "https://github.com/sabith",
+      "github": "https://github.com/sabith/aura-habit"
+    },
+    "caseStudy": {
+      "role": "Mobile Designer & Developer",
+      "duration": "2 Months (2025)",
+      "overview": "Designed for focus and mindfulness, Aura eliminates gamified addiction loops from habit tracking in favor of peaceful, typography-driven daily reflection.",
+      "challenge": "Designing custom canvas graph painters that calculate streaks dynamically with zero UI stutter.",
+      "solution": "Utilized Flutter CustomPainter with path caching and local SQLite indexes for instant query execution.",
+      "features": [
+        "Minimalist typographic interface with custom dark and ivory themes",
+        "Custom canvas streak heatmaps and consistency metrics",
+        "Tactile haptic feedback on completion gestures",
+        "Exportable plain-text and JSON backup files"
+      ],
+      "metrics": [
+        { "label": "App Size", "value": "12 MB" },
+        { "label": "Cold Start", "value": "< 200ms" },
+        { "label": "Rating", "value": "4.9 / 5.0" }
+      ]
+    }
+  }
+]

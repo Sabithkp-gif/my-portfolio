@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabith — Developer &amp; Creative Technologist</title>
+  
+  <!-- SEO & Open Graph Metadata -->
+  <meta name="description" content="Personal portfolio of Sabith. Creative technologist and developer engineering cross-platform Flutter applications, robust backend microservices, local AI workflows, and IoT edge systems." />
+  <meta name="keywords" content="Sabith, Developer, Creative Technologist, Flutter, Dart, Python, FastAPI, IoT, ESP8266, AI, Portfolio" />
+  <meta name="author" content="Sabith" />
+  
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Sabith — Developer &amp; Creative Technologist" />
+  <meta property="og:description" content="Building thoughtful digital products, from high-performance mobile apps to interactive web experiences." />
+  <meta property="og:image" content="/assets/images/hero-composition.svg" />
+  <meta property="og:url" content="https://sabith.dev" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- 1. Minimalist Preloader -->
+  <aside class="preloader-overlay" aria-hidden="true">
+    <div class="preloader-top">
+      <span class="preloader-brand">SABITH // DEV PORTFOLIO</span>
+      <span class="preloader-status">INITIALIZING SYSTEM</span>
+    </div>
+    <div class="preloader-center">
+      <div class="preloader-counter">00</div>
+    </div>
+    <div class="preloader-bottom">
+      <div class="preloader-bar-track">
+        <div class="preloader-bar-fill"></div>
+      </div>
+      <span class="preloader-meta">FLUTTER • WEB • AI • IOT</span>
+    </div>
+  </aside>
+
+  <!-- 2. Sticky Floating Navigation Island -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-island" aria-label="Main Navigation">
+        <!-- Brand -->
+        <a href="/index.html" class="brand-link" aria-label="Sabith Homepage">
+          <span class="brand-monogram">S</span>
+          <span>SABITH</span>
+        </a>
+
+        <!-- Center Links -->
+        <ul class="nav-links-center" role="list">
+          <li><a href="/index.html#featured-works" class="nav-item-link">Work</a></li>
+          <li><a href="/projects.html" class="nav-item-link">Projects</a></li>
+          <li><a href="/about.html" class="nav-item-link">About</a></li>
+          <li><a href="/index.html#skills-section" class="nav-item-link">Skills</a></li>
+        </ul>
+
+        <!-- Action Right -->
+        <div class="nav-action-right">
+          <a href="/contact.html" class="btn-pill btn-primary btn-magnetic">
+            Get in Touch <span class="arrow-shift-hover">→</span>
+          </a>
+          <!-- Mobile Menu Hamburger Button -->
+          <button class="mobile-menu-btn" aria-label="Toggle Mobile Navigation Menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Navigation Drawer -->
+  <div class="mobile-drawer" role="dialog" aria-label="Mobile Navigation Menu">
+    <nav class="mobile-drawer-links">
+      <a href="/index.html" class="mobile-nav-link">Home</a>
+      <a href="/projects.html" class="mobile-nav-link">Selected Work</a>
+      <a href="/about.html" class="mobile-nav-link">About Sabith</a>
+      <a href="/index.html#skills-section" class="mobile-nav-link">Capabilities</a>
+      <a href="/contact.html" class="mobile-nav-link" style="color: var(--accent);">Contact</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <span class="eyebrow-label" style="color: var(--text-light-muted);">SABITH • CREATIVE TECHNOLOGIST</span>
+      <p style="font-size: 0.85rem; color: var(--text-light-muted);">Based in India • Available for global collaborations.</p>
+    </div>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- 3. Cinematic Hero Section -->
+    <section class="hero-section" aria-label="Hero Introduction">
+      <div class="container">
+        <div class="hero-layout-grid">
+          
+          <!-- Left: Typographic & Identity Block -->
+          <div class="hero-text-block">
+            <div class="hero-status-pill reveal-fade-up">
+              <span class="status-dot-pulse"></span>
+              <span>AVAILABLE FOR SELECT COLLABORATIONS</span>
+            </div>
+
+            <div class="eyebrow-label reveal-fade-up" style="margin-top: 0.5rem;">
+              <span class="eyebrow-dot"></span>
+              <span>DEVELOPER / CREATIVE TECHNOLOGIST</span>
+            </div>
+
+            <h1 class="hero-giant-title reveal-fade-up">
+              SABITH
+            </h1>
+
+            <p class="hero-tagline reveal-fade-up">
+              Building <span class="serif-accent" style="font-size: 1.25em;">thoughtful</span> digital products, from high-performance mobile apps to interactive web experiences.
+            </p>
+
+            <div class="hero-focus-tags reveal-fade-up">
+              <span class="focus-chip">Flutter</span>
+              <span class="focus-chip">Web Architecture</span>
+              <span class="focus-chip">Backend Systems</span>
+              <span class="focus-chip">Local AI</span>
+              <span class="focus-chip">IoT Hardware</span>
+            </div>
+
+            <div class="hero-actions-row reveal-fade-up">
+              <a href="#featured-works" class="btn-pill btn-primary btn-magnetic">
+                Explore Selected Works <span class="arrow-shift-hover">↓</span>
+              </a>
+              <a href="/about.html" class="btn-pill btn-secondary btn-magnetic">
+                About Identity &amp; Philosophy
+              </a>
+            </div>
+
+            <div class="hero-scroll-cue reveal-fade-up">
+              <div class="scroll-line-glide"></div>
+              <span>Scroll to explore</span>
+            </div>
+          </div>
+
+          <!-- Right: Visual Workspace Composition with Mouse Parallax -->
+          <div class="hero-visual-col reveal-fade-up">
+            <div class="hero-composition-stage">
+              <img src="/assets/images/hero-composition.svg" alt="Sabith Developer Workspace &amp; System Architecture Abstract Composition" class="hero-comp-image" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Editorial Introduction Section -->
+    <section class="section-padding" style="background-color: var(--bg-surface);" aria-label="About Philosophy">
+      <div class="container">
+        <div class="editorial-intro-grid">
+          <div>
+            <span class="eyebrow-label" style="margin-bottom: 1rem;"><span class="eyebrow-dot"></span> 01 / PHILOSOPHY</span>
+            <h2 class="editorial-big-quote">
+              Turning ideas into <span class="serif-accent">reliable</span> digital products.
+            </h2>
+          </div>
+          <div class="editorial-body-content">
+            <p>
+              I am a developer and creative technologist who believes software should be as meticulously crafted on the inside as it is seamless on the outside. My work bridges cross-platform mobile engineering in Flutter, resilient backend services in Node.js and FastAPI, local AI orchestration, and embedded hardware telemetry.
+            </p>
+            <p>
+              Rather than chasing ephemeral trends, I prioritize architectural clarity, robust performance at 60/120 FPS, and minimal user friction.
+            </p>
+            
+            <!-- Currently Exploring Box -->
+            <div class="currently-exploring-box">
+              <div class="exploring-header">CURRENTLY EXPLORING &amp; EXPERIMENTING</div>
+              <div class="exploring-tags">
+                <span class="explore-tag">Local LLM Quantization (Ollama)</span>
+                <span class="explore-tag">ESP8266 MQTT Sensor Nodes</span>
+                <span class="explore-tag">Flutter Riverpod State Isolates</span>
+                <span class="explore-tag">Network Socket Reconnaissance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Horizontal Featured Works Showcase (Desktop Pinned Gallery) -->
+    <section id="featured-works" class="horizontal-section-pin" aria-label="Featured Works Gallery">
+      <div class="container horizontal-header-wrap">
+        <div class="flex-between">
+          <div>
+            <span class="eyebrow-label" style="color: var(--accent);"><span class="eyebrow-dot"></span> 02 / SELECTED WORK</span>
+            <h2 class="section-headline" style="margin-top: 0.5rem;">Featured Case Studies</h2>
+            <p class="section-subhead">Curated applications spanning mobile ecosystems, hardware telemetry, and web engines.</p>
+          </div>
+          <div>
+            <a href="/projects.html" class="btn-pill btn-dark">
+              View All Projects (6) →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal Track (Rendered dynamically by projects.js) -->
+      <div class="horizontal-track-container" id="featured-track">
+        <!-- Populated via JavaScript -->
+      </div>
+    </section>
+
+    <!-- 6. Currently Building Spotlight Section -->
+    <section class="section-padding" aria-label="Currently Building">
+      <div class="container">
+        <div class="currently-building-wrapper reveal-fade-up">
+          <div class="currently-building-grid">
+            <div>
+              <span class="building-status-tag">
+                <span class="status-dot-pulse"></span>
+                ACTIVE IN LAB • IN PROGRESS
+              </span>
+              <h2 class="building-title">Personal Developer Ecosystem &amp; Edge Sync</h2>
+              <p class="building-desc">
+                Constructing a unified developer dashboard combining local RAG contextual search, live ESP8266 atmospheric telemetry, and synchronized task tracking across mobile and desktop.
+              </p>
+              <div class="hero-focus-tags">
+                <span class="tech-chip-dark">Flutter Desktop</span>
+                <span class="tech-chip-dark">FastAPI</span>
+                <span class="tech-chip-dark">MQTT Broker</span>
+                <span class="tech-chip-dark">ChromaDB</span>
+              </div>
+            </div>
+
+            <div class="building-metric-box">
+              <span class="eyebrow-label" style="color: var(--text-light-muted);">MILESTONE STATUS</span>
+              <div class="metric-row">
+                <span class="metric-label">Architecture:</span>
+                <span class="metric-val" style="color: var(--status-active);">Core Services Deployed</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-label">Edge Nodes:</span>
+                <span class="metric-val">ESP8266 v2 Online</span>
+              </div>
+              <div class="metric-row">
+                <span class="metric-label">Target Beta:</span>
+                <span class="metric-val">Q4 2026</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Interactive Skills & Capabilities Matrix -->
+    <section id="skills-section" class="section-padding" style="background-color: var(--bg-surface);" aria-label="Technical Capabilities">
+      <div class="container">
+        <div class="section-header-block reveal-fade-up">
+          <span class="eyebrow-label"><span class="eyebrow-dot"></span> 03 / CAPABILITIES</span>
+          <h2 class="section-headline">Engineering Matrix</h2>
+          <p class="section-subhead">Real-world technical competencies, toolchains, and specialized domains.</p>
+        </div>
+
+        <!-- Rendered dynamically by skills.js -->
+        <div class="skills-category-grid" id="skills-grid-root">
+          <!-- Populated via JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Development Journey Section -->
+    <section class="section-padding" aria-label="Development Journey">
+      <div class="container container-narrow">
+        <div class="section-header-block reveal-fade-up">
+          <span class="eyebrow-label"><span class="eyebrow-dot"></span> 04 / PROGRESSION</span>
+          <h2 class="section-headline">Development Journey</h2>
+          <p class="section-subhead">Milestones in software engineering, systems design, and physical computing.</p>
+        </div>
+
+        <div class="timeline-track-wrap reveal-fade-up">
+          
+          <div class="timeline-item-block">
+            <div class="timeline-item-dot"></div>
+            <span class="timeline-year-badge">2026 — CURRENT</span>
+            <h3 class="timeline-milestone-title">Unified Digital Ecosystems &amp; AI Integration</h3>
+            <p>Architecting multi-platform experiences combining Flutter mobile apps, local LLM RAG pipelines, and custom IoT edge telemetry nodes.</p>
+            <div class="timeline-badges-row">
+              <span class="focus-chip">Flutter</span>
+              <span class="focus-chip">FastAPI</span>
+              <span class="focus-chip">Ollama</span>
+              <span class="focus-chip">ESP8266</span>
+              <span class="focus-chip">GSAP &amp; Lenis</span>
+            </div>
+          </div>
+
+          <div class="timeline-item-block">
+            <div class="timeline-item-dot"></div>
+            <span class="timeline-year-badge">2025</span>
+            <h3 class="timeline-milestone-title">Mobile Architecture &amp; Real-time Systems</h3>
+            <p>Engineered real-time communication systems, WebSocket event dispatchers, and offline-first database synchronization models.</p>
+            <div class="timeline-badges-row">
+              <span class="focus-chip">Dart</span>
+              <span class="focus-chip">WebSockets</span>
+              <span class="focus-chip">SQLite</span>
+              <span class="focus-chip">Node.js</span>
+              <span class="focus-chip">Linux Sockets</span>
+            </div>
+          </div>
+
+          <div class="timeline-item-block">
+            <div class="timeline-item-dot"></div>
+            <span class="timeline-year-badge">2024</span>
+            <h3 class="timeline-milestone-title">Foundations &amp; Microcontroller Prototyping</h3>
+            <p>Explored foundational software paradigms, Python backend development, network security fundamentals, and breadboard sensor integration.</p>
+            <div class="timeline-badges-row">
+              <span class="focus-chip">Python</span>
+              <span class="focus-chip">JavaScript</span>
+              <span class="focus-chip">C++</span>
+              <span class="focus-chip">Cybersecurity</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. Contact CTA & Interactive Transmission Section -->
+    <section id="contact-section" class="section-padding" style="background-color: var(--bg-surface);" aria-label="Contact Sabith">
+      <div class="container">
+        <div class="contact-editorial-grid">
+          
+          <!-- Channels & Direct Reach -->
+          <div class="contact-channels-card reveal-fade-up">
+            <span class="eyebrow-label"><span class="eyebrow-dot"></span> 05 / INITIATE CONTACT</span>
+            <h2 class="section-headline">
+              Have an idea?<br />
+              <span class="serif-accent">Let’s build</span> something useful.
+            </h2>
+            <p>
+              I am open to discuss new software projects, engineering roles, and creative technology collaborations.
+            </p>
+
+            <!-- Timezone Display -->
+            <div class="time-zone-display">
+              <span class="status-dot-pulse"></span>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">LOCAL TIME (SABITH)</div>
+                <div class="time-zone-clock" id="live-time-clock">--:--:-- IST</div>
+              </div>
+            </div>
+
+            <!-- Email Clipboard Action -->
+            <div style="margin-top: 0.5rem;">
+              <button id="copy-email-btn" class="btn-pill btn-primary btn-magnetic" data-email="sabith.developer@gmail.com">
+                📋 Copy sabith.developer@gmail.com
+              </button>
+            </div>
+
+            <!-- Social Links Minimal -->
+            <div class="social-links-pills" style="margin-top: 1rem;">
+              <a href="https://github.com/sabith" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Sabith on GitHub">
+                GitHub ↗
+              </a>
+              <a href="https://linkedin.com/in/sabith" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Sabith on LinkedIn">
+                LinkedIn ↗
+              </a>
+              <a href="https://instagram.com/sabith" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="Sabith on Instagram">
+                Instagram ↗
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card reveal-fade-up">
+            <form id="contact-form" novalidate>
+              <div class="form-field-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Maya Chen" required />
+              </div>
+
+              <div class="form-field-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. maya@domain.com" required />
+              </div>
+
+              <div class="form-field-group">
+                <label for="form-message" class="form-label">Project Details / Message</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Describe what you are looking to build or collaborate on..." required></textarea>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn-pill btn-accent btn-magnetic" style="width: 100%; padding: 0.9rem;">
+                Send Message <span class="arrow-shift-hover">→</span>
+              </button>
+
+              <div id="form-status" class="form-status-message" role="alert"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 10. Minimalist Editorial Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-huge">SABITH</div>
+          <p style="color: var(--text-light-muted); max-width: 480px; margin-top: 1rem;">
+            Developer and creative technologist crafting purposeful mobile products, web architectures, and hardware experiments.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; justify-content: flex-end;">
+          <span class="eyebrow-label" style="color: var(--text-light-muted);">NAVIGATION DIRECTORY</span>
+          <a href="/index.html" style="color: var(--text-light);">Home</a>
+          <a href="/projects.html" style="color: var(--text-light);">Selected Works</a>
+          <a href="/about.html" style="color: var(--text-light);">About &amp; Philosophy</a>
+          <a href="/contact.html" style="color: var(--text-light);">Direct Transmission</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 Sabith. All rights reserved. Zero telemetry tracking.</span>
+        <a href="#main-content" class="back-to-top-btn">
+          Back to Top ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Alert -->
+  <div id="toast-notify" class="toast-notification" role="status" aria-live="polite"></div>
+
+  <!-- CDN Dependencies: GSAP, ScrollTrigger, Lenis -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <!-- Application Modular Scripts -->
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

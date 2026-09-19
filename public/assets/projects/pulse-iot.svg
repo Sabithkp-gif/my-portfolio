@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="iot-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121619"/>
+      <stop offset="100%" stop-color="#090C0E"/>
+    </linearGradient>
+    <linearGradient id="oled-screen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#02080D"/>
+      <stop offset="100%" stop-color="#010406"/>
+    </linearGradient>
+    <filter id="iot-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#iot-bg)"/>
+
+  <!-- Technical Circuit Grid Lines -->
+  <g stroke="#2DD4BF" stroke-opacity="0.06" stroke-width="1.5" stroke-dasharray="6,6">
+    <line x1="100" y1="100" x2="1100" y2="100"/>
+    <line x1="100" y1="700" x2="1100" y2="700"/>
+    <line x1="200" y1="50" x2="200" y2="750"/>
+    <line x1="1000" y1="50" x2="1000" y2="750"/>
+    <circle cx="200" cy="100" r="4" fill="#2DD4BF" opacity="0.3"/>
+    <circle cx="1000" cy="100" r="4" fill="#2DD4BF" opacity="0.3"/>
+    <circle cx="200" cy="700" r="4" fill="#2DD4BF" opacity="0.3"/>
+    <circle cx="1000" cy="700" r="4" fill="#2DD4BF" opacity="0.3"/>
+  </g>
+
+  <!-- Central Microcontroller & OLED Hardware Chassis Mockup -->
+  <g transform="translate(350, 140)" filter="url(#iot-shadow)">
+    <!-- Matte Dark Enclosure -->
+    <rect x="0" y="0" width="500" height="520" rx="28" fill="#181E24" stroke="#2D3748" stroke-width="2"/>
+    
+    <!-- Screws at 4 corners -->
+    <circle cx="30" cy="30" r="8" fill="#2D3748"/>
+    <circle cx="30" cy="30" r="3" fill="#181E24"/>
+    <circle cx="470" cy="30" r="8" fill="#2D3748"/>
+    <circle cx="470" cy="30" r="3" fill="#181E24"/>
+    <circle cx="30" cy="490" r="8" fill="#2D3748"/>
+    <circle cx="30" cy="490" r="3" fill="#181E24"/>
+    <circle cx="470" cy="490" r="8" fill="#2D3748"/>
+    <circle cx="470" cy="490" r="3" fill="#181E24"/>
+
+    <!-- Hardware Labels -->
+    <text x="50" y="70" fill="#64748B" font-family="monospace" font-size="12" letter-spacing="2">PULSE-OS // NODE 01</text>
+    <text x="450" y="70" fill="#2DD4BF" font-family="monospace" font-size="11" text-anchor="end">MQTT: CONNECTED</text>
+
+    <!-- 128x64 OLED Blue Display Box -->
+    <g transform="translate(50, 95)">
+      <rect x="0" y="0" width="400" height="230" rx="14" fill="url(#oled-screen)" stroke="#0E7490" stroke-width="2"/>
+      
+      <!-- OLED Blue Content (Monochrome Blue/Cyan glow) -->
+      <g fill="#38BDF8" font-family="monospace">
+        <text x="24" y="38" font-size="14" font-weight="700" letter-spacing="1">TELEMETRY STREAM v2.4</text>
+        <line x1="24" y1="48" x2="376" y2="48" stroke="#0284C7" stroke-width="1"/>
+        
+        <text x="24" y="80" font-size="12" fill="#93C5FD">TEMP: 24.8 °C</text>
+        <text x="200" y="80" font-size="12" fill="#93C5FD">HUMIDITY: 52%</text>
+        
+        <text x="24" y="110" font-size="12" fill="#93C5FD">AIR QUALITY: 420 PPM (GOOD)</text>
+        <text x="24" y="140" font-size="12" fill="#93C5FD">VOLTAGE: 3.32V (STABLE)</text>
+        
+        <!-- Oscilloscope Waveform on OLED -->
+        <path d="M 24 195 Q 60 160, 95 195 T 165 195 T 235 195 T 305 195 T 375 195" fill="none" stroke="#38BDF8" stroke-width="2"/>
+        <text x="24" y="215" font-size="10" fill="#60A5FA">0ms ────────────── 1000ms BUFFER</text>
+      </g>
+    </g>
+
+    <!-- ESP8266 Chip & Pin Headers Diagram Below OLED -->
+    <g transform="translate(50, 350)">
+      <!-- ESP Chip Metallic Shield -->
+      <rect x="0" y="0" width="160" height="120" rx="6" fill="#0F172A" stroke="#475569" stroke-width="1.5"/>
+      <rect x="15" y="15" width="130" height="90" rx="4" fill="#334155"/>
+      <text x="80" y="55" fill="#E2E8F0" font-family="monospace" font-size="11" font-weight="700" text-anchor="middle">ESP8266MOD</text>
+      <text x="80" y="75" fill="#94A3B8" font-family="monospace" font-size="9" text-anchor="middle">ISM 2.4GHz</text>
+
+      <!-- Pin Header Strip -->
+      <g transform="translate(190, 10)">
+        <text x="0" y="15" fill="#64748B" font-family="monospace" font-size="11">GPIO 04 (SDA) ─ I2C BUS</text>
+        <text x="0" y="40" fill="#64748B" font-family="monospace" font-size="11">GPIO 05 (SCL) ─ CLK</text>
+        <text x="0" y="65" fill="#64748B" font-family="monospace" font-size="11">ADC 0   (A0)  ─ ANALOG</text>
+        <text x="0" y="90" fill="#22C55E" font-family="monospace" font-size="11">VCC 3.3V / GND ─ ACTIVE</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Left Stats Card -->
+  <g transform="translate(60, 260)" filter="url(#iot-shadow)">
+    <rect x="0" y="0" width="250" height="200" rx="16" fill="#181E24" stroke="#2D3748" stroke-width="1"/>
+    <text x="24" y="38" fill="#64748B" font-family="monospace" font-size="11">MQTT BROKER</text>
+    <text x="24" y="75" fill="#F8FAFC" font-family="sans-serif" font-size="28" font-weight="700">99.98%</text>
+    <text x="24" y="96" fill="#94A3B8" font-family="sans-serif" font-size="12">Telemetry reliability</text>
+    
+    <line x1="24" y1="120" x2="226" y2="120" stroke="#2D3748"/>
+    
+    <text x="24" y="155" fill="#2DD4BF" font-family="monospace" font-size="15" font-weight="600">15mA</text>
+    <text x="90" y="155" fill="#94A3B8" font-family="sans-serif" font-size="12">Deep Sleep Mode</text>
+  </g>
+
+  <!-- Right Fast API Node Card -->
+  <g transform="translate(890, 260)" filter="url(#iot-shadow)">
+    <rect x="0" y="0" width="250" height="200" rx="16" fill="#181E24" stroke="#2D3748" stroke-width="1"/>
+    <text x="24" y="38" fill="#64748B" font-family="monospace" font-size="11">SERVER INGESTION</text>
+    <text x="24" y="75" fill="#F8FAFC" font-family="sans-serif" font-size="24" font-weight="700">FastAPI Async</text>
+    <text x="24" y="96" fill="#94A3B8" font-family="sans-serif" font-size="12">Python Microservice</text>
+    
+    <line x1="24" y1="120" x2="226" y2="120" stroke="#2D3748"/>
+    
+    <text x="24" y="155" fill="#38BDF8" font-family="monospace" font-size="13">QoS 1 Deliveries</text>
+    <text x="24" y="175" fill="#64748B" font-family="monospace" font-size="11">Time-series indexed</text>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aura-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B1A19"/>
+      <stop offset="100%" stop-color="#100F0E"/>
+    </linearGradient>
+    <filter id="aura-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#aura-bg)"/>
+
+  <!-- Minimal Concentric Waves -->
+  <g stroke="#D97736" stroke-opacity="0.08" stroke-width="1.5">
+    <ellipse cx="600" cy="400" rx="300" ry="180" fill="none"/>
+    <ellipse cx="600" cy="400" rx="450" ry="270" fill="none"/>
+  </g>
+
+  <!-- Mobile Device Mockup for Aura -->
+  <g transform="translate(420, 90)" filter="url(#aura-shadow)">
+    <!-- Outer Body -->
+    <rect x="0" y="0" width="360" height="620" rx="44" fill="#141312" stroke="#3A3835" stroke-width="2"/>
+    <rect x="10" y="10" width="340" height="600" rx="36" fill="#1A1918"/>
+    
+    <!-- Dynamic Island -->
+    <rect x="130" y="22" width="100" height="24" rx="12" fill="#0C0B0A"/>
+
+    <!-- App Header -->
+    <g transform="translate(30, 70)">
+      <text x="0" y="20" fill="#F5F3EE" font-family="'Times New Roman', serif" font-style="italic" font-size="24">Aura.</text>
+      <text x="0" y="38" fill="#8C887B" font-family="sans-serif" font-size="11" letter-spacing="1">TODAY — SEP 19</text>
+    </g>
+
+    <!-- Habit Cards -->
+    <g transform="translate(25, 130)">
+      <!-- Habit Item 1 -->
+      <rect x="0" y="0" width="290" height="74" rx="16" fill="#252422" stroke="#383633" stroke-width="1"/>
+      <circle cx="34" cy="37" r="14" fill="#C85A32"/>
+      <path d="M 28 37 L 33 42 L 41 32" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+      <text x="60" y="32" fill="#F5F3EE" font-family="sans-serif" font-size="14" font-weight="600">Deep Work &amp; Coding</text>
+      <text x="60" y="50" fill="#8C887B" font-family="sans-serif" font-size="11">4 hrs completed · 18 day streak</text>
+
+      <!-- Habit Item 2 -->
+      <rect x="0" y="88" width="290" height="74" rx="16" fill="#252422" stroke="#383633" stroke-width="1"/>
+      <circle cx="34" cy="125" r="14" fill="#C85A32"/>
+      <path d="M 28 125 L 33 130 L 41 120" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+      <text x="60" y="120" fill="#F5F3EE" font-family="sans-serif" font-size="14" font-weight="600">Physical Exercise</text>
+      <text x="60" y="138" fill="#8C887B" font-family="sans-serif" font-size="11">Morning run &amp; stretch</text>
+
+      <!-- Habit Item 3 (Pending) -->
+      <rect x="0" y="176" width="290" height="74" rx="16" fill="#1F1E1D" stroke="#2F2D2A" stroke-width="1"/>
+      <circle cx="34" cy="213" r="14" fill="none" stroke="#666258" stroke-width="2"/>
+      <text x="60" y="208" fill="#D5D2C8" font-family="sans-serif" font-size="14" font-weight="600">Technical Reading</text>
+      <text x="60" y="226" fill="#8C887B" font-family="sans-serif" font-size="11">Distributed systems &amp; RFCs</text>
+
+      <!-- Streak Canvas Visualization -->
+      <g transform="translate(0, 275)">
+        <text x="0" y="0" fill="#8C887B" font-family="sans-serif" font-size="10" letter-spacing="1">CONSISTENCY MATRIX</text>
+        <g transform="translate(0, 15)">
+          <rect x="0" y="0" width="36" height="36" rx="8" fill="#C85A32"/>
+          <rect x="42" y="0" width="36" height="36" rx="8" fill="#C85A32"/>
+          <rect x="84" y="0" width="36" height="36" rx="8" fill="#C85A32"/>
+          <rect x="126" y="0" width="36" height="36" rx="8" fill="#C85A32"/>
+          <rect x="168" y="0" width="36" height="36" rx="8" fill="#C85A32"/>
+          <rect x="210" y="0" width="36" height="36" rx="8" fill="#C85A32"/>
+          <rect x="252" y="0" width="36" height="36" rx="8" fill="#383633"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

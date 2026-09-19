@@ -1,0 +1,124 @@
+/* ==========================================================================
+   ANIMATIONS & MOTION SYSTEM — SABITH PORTFOLIO
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Reveal Utility Classes (Synchronized with GSAP ScrollTrigger)
+   -------------------------------------------------------------------------- */
+.reveal-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s var(--ease-out-expo), transform 0.8s var(--ease-out-expo);
+  will-change: opacity, transform;
+}
+
+.reveal-fade-up.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-fade-in {
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-out-expo);
+}
+
+.reveal-fade-in.is-inview {
+  opacity: 1;
+}
+
+/* Image Scale / Clip Path Reveal */
+.img-reveal-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-reveal-wrapper img {
+  transform: scale(1.15);
+  transition: transform 1.2s var(--ease-out-expo);
+}
+
+.img-reveal-wrapper.is-inview img {
+  transform: scale(1);
+}
+
+/* Text Masking */
+.text-mask-line {
+  overflow: hidden;
+  display: block;
+}
+
+.text-mask-child {
+  display: inline-block;
+  transform: translateY(110%);
+  transition: transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.is-inview .text-mask-child {
+  transform: translateY(0%);
+}
+
+/* --------------------------------------------------------------------------
+   Hover Physics & Microinteractions
+   -------------------------------------------------------------------------- */
+.magnetic-target {
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.arrow-shift-hover {
+  display: inline-block;
+  transition: transform 0.25s var(--ease-out-expo);
+}
+
+a:hover .arrow-shift-hover,
+button:hover .arrow-shift-hover {
+  transform: translateX(4px);
+}
+
+/* Smooth Page Transitions */
+.page-fade-transition {
+  opacity: 0;
+  animation: pageIn 0.6s var(--ease-out-expo) forwards;
+}
+
+@keyframes pageIn {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Accessibility: prefers-reduced-motion Overrides
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal-fade-up,
+  .reveal-fade-in,
+  .text-mask-child,
+  .img-reveal-wrapper img {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .horizontal-track-container {
+    transform: none !important;
+  }
+
+  .preloader-overlay {
+    display: none !important;
+  }
+}

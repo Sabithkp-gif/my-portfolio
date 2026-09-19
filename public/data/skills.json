@@ -1,0 +1,122 @@
+[
+  {
+    "category": "Mobile & Frontend",
+    "icon": "smartphone",
+    "description": "Crafting native feel, fluid gesture systems, and pixel-precise responsive interfaces.",
+    "skills": [
+      {
+        "name": "Flutter & Dart",
+        "level": "Core Competency",
+        "highlight": "Cross-platform mobile apps, custom Canvas painters, Riverpod/Bloc architecture, offline-first SQLite."
+      },
+      {
+        "name": "JavaScript (ES6+)",
+        "level": "Advanced",
+        "highlight": "Modern vanilla modular architecture, async event loops, DOM performance, zero-dependency engineering."
+      },
+      {
+        "name": "CSS3 & Design Systems",
+        "level": "Expertise",
+        "highlight": "Fluid typography (clamp), CSS Grid/Flexbox, custom properties, micro-animations, glass/paper aesthetics."
+      },
+      {
+        "name": "Motion & Interactivity",
+        "level": "Advanced",
+        "highlight": "GSAP Timeline, ScrollTrigger parallax, Lenis smooth scrolling, physics-based interactions."
+      }
+    ]
+  },
+  {
+    "category": "Backend & Cloud",
+    "icon": "server",
+    "description": "Architecting resilient APIs, real-time data pipelines, and scalable database schemas.",
+    "skills": [
+      {
+        "name": "Node.js & Express",
+        "level": "Core Stack",
+        "highlight": "RESTful endpoints, middleware architecture, WebSocket servers, static delivery, JWT authentication."
+      },
+      {
+        "name": "FastAPI & Python",
+        "level": "Advanced",
+        "highlight": "High-speed asynchronous microservices, Pydantic type validation, background workers, AI endpoints."
+      },
+      {
+        "name": "Databases & Storage",
+        "level": "Proficient",
+        "highlight": "PostgreSQL, SQLite, Redis caching, indexing strategies, time-series data storage."
+      },
+      {
+        "name": "Real-time Protocols",
+        "level": "Proficient",
+        "highlight": "WebSockets bidirectional streaming, MQTT publish/subscribe, Server-Sent Events (SSE)."
+      }
+    ]
+  },
+  {
+    "category": "AI & Intelligent Workflows",
+    "icon": "cpu",
+    "description": "Integrating local LLM intelligence, semantic retrieval, and agentic automation.",
+    "skills": [
+      {
+        "name": "Local LLM Integration",
+        "level": "Specialized",
+        "highlight": "Ollama orchestration, quantized GGUF models, private on-premise inference, token streaming."
+      },
+      {
+        "name": "RAG & Vector Search",
+        "level": "Specialized",
+        "highlight": "ChromaDB, dense embedding extraction, AST code parsing, hybrid search retrieval."
+      },
+      {
+        "name": "AI-Assisted Engineering",
+        "level": "Workflow",
+        "highlight": "System prompt engineering, multi-step agent pipelines, automated code synthesis."
+      }
+    ]
+  },
+  {
+    "category": "IoT & Hardware Prototyping",
+    "icon": "zap",
+    "description": "Connecting microcontrollers to the physical world with firmware and telemetry systems.",
+    "skills": [
+      {
+        "name": "ESP8266 / ESP32",
+        "level": "Hands-On",
+        "highlight": "C++ / Arduino IDE, Wi-Fi telemetry broadcasting, deep sleep power management, OTA firmware updates."
+      },
+      {
+        "name": "Sensors & Displays",
+        "level": "Hands-On",
+        "highlight": "I2C OLED screens (SSD1306), DHT/BME atmospheric sensors, analog light metrics, relay control."
+      },
+      {
+        "name": "MQTT Edge Architecture",
+        "level": "Hands-On",
+        "highlight": "Broker configuration, QoS message handling, edge computing telemetry pipelines."
+      }
+    ]
+  },
+  {
+    "category": "Security & Infrastructure",
+    "icon": "shield",
+    "description": "Defensive security mindset, Linux system administration, and robust deployment pipelines.",
+    "skills": [
+      {
+        "name": "Cybersecurity Fundamentals",
+        "level": "Applied Interest",
+        "highlight": "Network reconnaissance, socket analysis, SSL/TLS handshake inspection, defensive hardening."
+      },
+      {
+        "name": "Linux Environments",
+        "level": "Proficient",
+        "highlight": "Shell scripting (Bash), process supervision, systemd services, SSH tunneling, file permissions."
+      },
+      {
+        "name": "Git & Containerization",
+        "level": "Core Workflow",
+        "highlight": "Atomic commits, branching workflows, Docker containerization, automated build environments."
+      }
+    ]
+  }
+]

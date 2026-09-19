@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Transmission — Sabith</title>
+  
+  <meta name="description" content="Reach out to Sabith for mobile software development, full-stack web engineering, IoT prototypes, or consulting opportunities." />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/components.css" />
+  <link rel="stylesheet" href="/css/animations.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to contact form</a>
+
+  <!-- Preloader -->
+  <aside class="preloader-overlay" aria-hidden="true">
+    <div class="preloader-top">
+      <span class="preloader-brand">SABITH // CONTACT HUB</span>
+      <span class="preloader-status">READY FOR TRANSMISSION</span>
+    </div>
+    <div class="preloader-center">
+      <div class="preloader-counter">00</div>
+    </div>
+    <div class="preloader-bottom">
+      <div class="preloader-bar-track">
+        <div class="preloader-bar-fill"></div>
+      </div>
+      <span class="preloader-meta">INITIALIZING CHANNELS</span>
+    </div>
+  </aside>
+
+  <!-- Sticky Header Island -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <nav class="nav-island" aria-label="Main Navigation">
+        <a href="/index.html" class="brand-link" aria-label="Sabith Homepage">
+          <span class="brand-monogram">S</span>
+          <span>SABITH</span>
+        </a>
+
+        <ul class="nav-links-center" role="list">
+          <li><a href="/index.html#featured-works" class="nav-item-link">Work</a></li>
+          <li><a href="/projects.html" class="nav-item-link">Projects</a></li>
+          <li><a href="/about.html" class="nav-item-link">About</a></li>
+          <li><a href="/index.html#skills-section" class="nav-item-link">Skills</a></li>
+        </ul>
+
+        <div class="nav-action-right">
+          <a href="/contact.html" class="btn-pill btn-primary btn-magnetic is-active">
+            Get in Touch <span class="arrow-shift-hover">→</span>
+          </a>
+          <button class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" role="dialog" aria-label="Mobile Navigation">
+    <nav class="mobile-drawer-links">
+      <a href="/index.html" class="mobile-nav-link">Home</a>
+      <a href="/projects.html" class="mobile-nav-link">Selected Work</a>
+      <a href="/about.html" class="mobile-nav-link">About Sabith</a>
+      <a href="/index.html#skills-section" class="mobile-nav-link">Capabilities</a>
+      <a href="/contact.html" class="mobile-nav-link is-active" style="color: var(--accent);">Contact</a>
+    </nav>
+    <div class="mobile-drawer-footer">
+      <span class="eyebrow-label" style="color: var(--text-light-muted);">SABITH • CREATIVE TECHNOLOGIST</span>
+    </div>
+  </div>
+
+  <main id="main-content">
+    
+    <section class="section-padding" style="padding-top: calc(var(--header-height) + 4rem);">
+      <div class="container">
+        
+        <div class="section-header-block reveal-fade-up">
+          <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+            <a href="/index.html" class="view-case-link" style="color: var(--text-secondary); font-size: 0.85rem;">← Home</a>
+            <span style="color: var(--border-strong);">/</span>
+            <span class="eyebrow-label">COMMUNICATION CHANNEL</span>
+          </div>
+          <h1 class="hero-giant-title" style="font-size: clamp(3rem, 7.5vw, 6.5rem); margin-bottom: 1rem;">
+            LET'S CONNECT.
+          </h1>
+          <p class="section-subhead">
+            Have a new application in development, an engineering opening, or an ambitious creative idea? Send a direct transmission below.
+          </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Contact Grid -->
+        <div class="contact-editorial-grid" style="margin-top: var(--space-lg);">
+          
+          <!-- Left Info & Metadata -->
+          <div class="contact-channels-card reveal-fade-up">
+            <h2 style="font-size: 1.75rem;">Direct Inquiries</h2>
+            <p>
+              I respond promptly to thoughtful engineering and product design conversations. Feel free to copy my direct email address or send a message via the form.
+            </p>
+
+            <!-- Timezone Display -->
+            <div class="time-zone-display">
+              <span class="status-dot-pulse"></span>
+              <div>
+                <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">LOCAL TIME (SABITH)</div>
+                <div class="time-zone-clock" id="live-time-clock">--:--:-- IST</div>
+              </div>
+            </div>
+
+            <!-- Email Action Button -->
+            <div>
+              <button id="copy-email-btn" class="btn-pill btn-primary btn-magnetic" data-email="sabith.developer@gmail.com">
+                📋 Copy sabith.developer@gmail.com
+              </button>
+            </div>
+
+            <!-- Additional Details -->
+            <div style="background-color: var(--bg-surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+              <span class="eyebrow-label"><span class="eyebrow-dot"></span> AVAILABILITY STATUS</span>
+              <p style="font-size: 0.95rem; color: var(--text-primary); font-weight: 600;">
+                Accepting select mobile app contracts, full-stack consulting, and high-impact full-time roles.
+              </p>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+                Typical turnaround: &lt; 24 business hours
+              </span>
+            </div>
+
+            <!-- Social Links Minimal -->
+            <div style="margin-top: 0.5rem;">
+              <span class="eyebrow-label" style="margin-bottom: 0.75rem;">EXTERNAL PROFILES</span>
+              <div class="social-links-pills" style="margin-top: 0.5rem;">
+                <a href="https://github.com/sabith" target="_blank" rel="noopener noreferrer" class="social-pill">
+                  GitHub ↗
+                </a>
+                <a href="https://linkedin.com/in/sabith" target="_blank" rel="noopener noreferrer" class="social-pill">
+                  LinkedIn ↗
+                </a>
+                <a href="https://instagram.com/sabith" target="_blank" rel="noopener noreferrer" class="social-pill">
+                  Instagram ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Validated Form -->
+          <div class="contact-form-card reveal-fade-up">
+            <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Direct Message Transmission</h2>
+            <form id="contact-form" novalidate>
+              <div class="form-field-group">
+                <label for="form-name" class="form-label">Full Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Morgan" required />
+              </div>
+
+              <div class="form-field-group">
+                <label for="form-email" class="form-label">Email Address</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@company.com" required />
+              </div>
+
+              <div class="form-field-group">
+                <label for="form-message" class="form-label">Project Details / Message</label>
+                <textarea id="form-message" class="form-textarea" placeholder="Provide context regarding your project timeline, requirements, or inquiry..." required></textarea>
+              </div>
+
+              <button type="submit" id="form-submit-btn" class="btn-pill btn-accent btn-magnetic" style="width: 100%; padding: 0.95rem; font-size: 0.95rem;">
+                Send Transmission <span class="arrow-shift-hover">→</span>
+              </button>
+
+              <div id="form-status" class="form-status-message" role="alert"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div>
+          <div class="footer-brand-huge">SABITH</div>
+          <p style="color: var(--text-light-muted); max-width: 480px; margin-top: 1rem;">
+            Developer and creative technologist crafting purposeful mobile products, web architectures, and hardware experiments.
+          </p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; justify-content: flex-end;">
+          <span class="eyebrow-label" style="color: var(--text-light-muted);">NAVIGATION DIRECTORY</span>
+          <a href="/index.html" style="color: var(--text-light);">Home</a>
+          <a href="/projects.html" style="color: var(--text-light);">Selected Works</a>
+          <a href="/about.html" style="color: var(--text-light);">About &amp; Philosophy</a>
+          <a href="/contact.html" style="color: var(--text-light);">Direct Transmission</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 Sabith. All rights reserved.</span>
+        <a href="#main-content" class="back-to-top-btn">
+          Back to Top ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast-notify" class="toast-notification" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
