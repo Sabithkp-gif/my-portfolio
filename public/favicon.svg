@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="grad-cyan-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E5FF"/>
+      <stop offset="50%" stop-color="#0088FF"/>
+      <stop offset="100%" stop-color="#0055FF"/>
+    </linearGradient>
+
+    <linearGradient id="grad-ribbon-fold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00A2FF"/>
+      <stop offset="60%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+
+    <linearGradient id="grad-purple-bottom" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+
+    <linearGradient id="grad-l-stem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00B4D8"/>
+      <stop offset="60%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+
+    <linearGradient id="grad-l-leg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+
+    <linearGradient id="fold-inner-shadow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003882"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+
+    <filter id="glow-sl" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#0066FF" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="#06070A"/>
+
+  <g transform="translate(68, 75)" filter="url(#glow-sl)">
+    <path d="M 52 0 L 196 0 L 172 38 L 48 38 Z" fill="url(#grad-cyan-blue)"/>
+    <path d="M 52 0 L 48 38 L 24 58 C 10 70, 0 88, 0 110 L 0 118 L 42 118 C 42 102, 50 92, 60 84 L 172 38 Z" fill="#00D2FF"/>
+    <path d="M 0 118 L 38 78 L 148 140 C 162 148, 172 164, 172 182 L 172 198 L 126 198 C 126 182, 116 172, 102 164 Z" fill="url(#fold-inner-shadow)"/>
+    <path d="M 28 88 L 148 152 C 166 162, 178 180, 178 202 L 178 214 L 32 292 L 0 292 L 118 210 C 128 202, 134 192, 134 180 L 134 172 L 20 110 Z" fill="url(#grad-ribbon-fold)"/>
+    <path d="M 0 292 L 144 292 L 120 254 L 28 254 Z" fill="url(#grad-purple-bottom)"/>
+    <path d="M 0 292 L 28 254 L 120 210 L 32 292 Z" fill="#2563EB"/>
+
+    <path d="M 204 28 L 244 0 L 244 220 L 204 256 Z" fill="url(#grad-l-stem)"/>
+    <path d="M 204 256 L 244 220 L 372 220 L 340 256 Z" fill="url(#grad-l-leg)"/>
+    <path d="M 204 256 L 340 256 L 308 292 L 204 292 Z" fill="#9333EA"/>
+  </g>
+</svg>
